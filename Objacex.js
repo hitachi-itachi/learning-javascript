@@ -8,5 +8,9 @@ const restaurant = {
 }
 
 //YOUR CODE GOES DOWN HERE:
+<<<<<<< HEAD
 let fullAddress = [restaurant["address"], restaurant["city"], restaurant["state"]]
+=======
+let fullAddress = restaurant["address"]
+>>>>>>> eb02bd207b59fc5294b89747635ecbc46ab52c16
 console.log(fullAddress)
