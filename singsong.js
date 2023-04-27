@@ -1,17 +1,28 @@
-const container = document.querySelector('#container');
-const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
+const btn = document.querySelector('#v2');
 
-
-
-for (let i = 1; i <= 151; i++) {
-    const pokemon = document.createElement('div');
-    const label = document.createElement('span');
-    pokemon.classList.add('pokemon')
-    label.innerText = `#${i}`;
-    const newImg = document.createElement('img');
-    newImg.src = `${baseURL}${i}.png`;
-
-    pokemon.appendChild(newImg);
-    pokemon.appendChild(label);
-    container.appendChild(pokemon);
+btn.onclick = function () {
+    console.log("YOU Clicked ME!");
+    console.log("I HOPE IT WORKED!");
 }
+
+function scream() {
+    console.log("AHHHHHHHHHHHHHH");
+    console.log("STOP TOUCHING ME!");
+
+}
+btn.onmouseenter = scream;
+
+const btn3 = document.querySelector('#v3');
+btn3.addEventListener('dblclick', function () {
+    alert("CLICKED!");
+})
+
+function shout() {
+    console.log("SHOUT!");
+}
+
+const tasButton = document.querySelector('#tas');
+
+tasButton.onclick = shout;
+
+
